@@ -1,12 +1,34 @@
 {
-  "diagnostic.displayByAle": true,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"json",
+		"clojure",
+		"python"
+	],
+	//"languageserver": {
+	//	"go": {
+	//		"command": "gopls",
+	//		"rootPatterns": [
+	//			"go.work",
+	//			"go.mod",
+	//			".vim/",
+	//			".git/",
+	//			".hg/"
+	//		],
+	//		"filetypes": [
+	//			"go"
+	//		],
+	//		"initializationOptions": {
+	//			"usePlaceholders": true
+	//		}
+	//	}
+	//},
+	"workspace.workspaceFolderCheckCwd": true,
 
-  "git.signOffset": 150,
-  "git.enableGutters": true,
+	"diagnostic.displayByAle": true,
+	"python.venvPath": "/home/mrc/.virtualenvs",
+	"python.linting.pylintEnabled": true,
+	"python.formatting.provider": "black",
+	"coc.preferences.formatOnType": true,
 
-  "python.jediEnabled": false,
-  "python.pipenvPath": "pipenv",
-  "python.venvPath": "/home/mrc/.virtualenvs",
-
-  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
+	"go.goplsArgs": ["-remote", "unix;/tmp/gopls-daemon-socket"],
 }
